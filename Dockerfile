@@ -9,8 +9,8 @@ RUN npm install
 COPY . .
 
 # Set up or Environment from the docker-compose file
-ARG API_KEY
-ENV API_KEY $API_KEY
+ARG STEAM_API_KEY
+ENV STEAM_API_KEY $STEAM_API_KEY
 
 # 3000 is the port we need for nextjs
 EXPOSE 3000

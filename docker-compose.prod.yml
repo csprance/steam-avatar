@@ -1,11 +1,11 @@
 version: '3'
 
 services:
-  nextsmrt:
+  steamavatar:
     build:
       context: .
       args:
         NODE_ENV: production
-        API_KEY: ${API_KEY}
+        STEAM_API_KEY: ${STEAM_API_KEY}
     labels:
       traefik.frontend.rule: 'Host:a.entradainteractive.com'
