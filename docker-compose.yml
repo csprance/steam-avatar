@@ -17,7 +17,7 @@ services:
       traefik.docker.network: 'web'
       traefik.enable: 'true'
       traefik.backend: 'steam-avatar'
-      traefik.frontend.rule: 'Host:a.entradainteractive.localhost'
+      traefik.frontend.rule: 'Host:${STAGING_HOST}'
       traefik.port: '3000'
 
 networks:

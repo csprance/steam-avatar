@@ -8,4 +8,4 @@ services:
         NODE_ENV: production
         STEAM_API_KEY: ${STEAM_API_KEY}
     labels:
-      traefik.frontend.rule: 'Host:a.entradainteractive.com'
+      traefik.frontend.rule: 'Host:${PRODUCTION_HOST}'
